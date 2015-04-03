@@ -3,9 +3,11 @@
        name="NateKodiLIFX"
        version="2.0.0"
        provider-name="Nathaniel Baker">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
+	<requires>
+	  <import addon="xbmc.python" version="2.1.0"/>
+	  <import addon="script.module.requests" version="1.2.7"/>
+	  <import addon="script.module.simplejson" version="2.0.10" optional="true"/>
+	</requires>
   <extension point="xbmc.service" library="service.py" start="startup"/>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
